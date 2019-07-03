@@ -1,0 +1,7 @@
+C:\Users\SunRay\Desktop\практика\text57\text57\bin\Debug\text57.exe.config
+C:\Users\SunRay\Desktop\практика\text57\text57\bin\Debug\text57.exe
+C:\Users\SunRay\Desktop\практика\text57\text57\bin\Debug\text57.pdb
+C:\Users\SunRay\Desktop\практика\text57\text57\obj\Debug\text57.csprojAssemblyReference.cache
+C:\Users\SunRay\Desktop\практика\text57\text57\obj\Debug\text57.csproj.CoreCompileInputs.cache
+C:\Users\SunRay\Desktop\практика\text57\text57\obj\Debug\text57.exe
+C:\Users\SunRay\Desktop\практика\text57\text57\obj\Debug\text57.pdb

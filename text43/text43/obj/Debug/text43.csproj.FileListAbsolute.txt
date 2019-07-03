@@ -1,0 +1,7 @@
+C:\Users\SunRay\Desktop\практика\text43\text43\bin\Debug\text43.exe.config
+C:\Users\SunRay\Desktop\практика\text43\text43\bin\Debug\text43.exe
+C:\Users\SunRay\Desktop\практика\text43\text43\bin\Debug\text43.pdb
+C:\Users\SunRay\Desktop\практика\text43\text43\obj\Debug\text43.csprojAssemblyReference.cache
+C:\Users\SunRay\Desktop\практика\text43\text43\obj\Debug\text43.csproj.CoreCompileInputs.cache
+C:\Users\SunRay\Desktop\практика\text43\text43\obj\Debug\text43.exe
+C:\Users\SunRay\Desktop\практика\text43\text43\obj\Debug\text43.pdb
