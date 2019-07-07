@@ -15,8 +15,10 @@ namespace recur27
     {
         static void Main(string[] args)
         {
+            //очищение файла
             FileStream file = new FileStream("C:\\Users\\SunRay\\Documents\\summer-practice-2019\\recur27\\file.txt", FileMode.Create);
             file.Close();
+            //ввод N и высчитывание количества элементов в дереве
             Console.Write("N: ");
             int N = Convert.ToInt16(Console.ReadLine());
             int num = 0;
@@ -26,10 +28,14 @@ namespace recur27
             }
             alg("C", num, 0, 0);
         }
+        //В результате выполнения метода alg формируется строка str, в которой содержится удовлетворяющий условиям путь.
+        //результат работы программы находится в файле file.txt, располагающемся в папке с решением
         static void alg(string str, int num, int value, int i)
         {
+            //ЕСЛИ нет детей И суммарный вес равен 9
             if (!isLeftChild(num, i) && value == 0)
             {
+                //запись в файл строки str
                 FileStream file = new FileStream("C:\\Users\\SunRay\\Documents\\summer-practice-2019\\recur27\\file.txt", FileMode.Append);
                 StreamWriter writer = new StreamWriter(file);
                 writer.WriteLine(str);
@@ -38,6 +44,7 @@ namespace recur27
             }
             else
             {
+                //рекурсивные вызовы при наличии детей
                 if (isLeftChild(num, i))
                 {
                     alg(str + 'A', num, value+1, leftChild(i));
@@ -45,22 +52,19 @@ namespace recur27
                 }
             }
         }
+        //проверка сществования левого ребенка
         static bool isLeftChild(int num, int i)
         {
             if (i * 2 + 1 <= num)
                 return true;
             else return false;
         }
-        static bool isRightChild(int num, int i)
-        {
-            if (i * 2 + 2 <= num)
-                return true;
-            else return false;
-        }
+        //получение левого ребенка
         static int leftChild(int i)
         {
             return i * 2 + 1;
         }
+        //получение правого ребенка
         static int rightChild(int i)
         {
             return i * 2 + 2;
