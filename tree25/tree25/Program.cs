@@ -33,7 +33,7 @@ namespace tree25
                     }
                     //вывод дерева
                     Console.SetCursorPosition(40, 2);
-                    root.treeOut(Console.WindowWidth / 2, 2);
+                    root.treeOut(Console.WindowWidth / 2, 2, 0);
                 }
                 else Console.WriteLine("Некорректное значение N");
             }
@@ -61,8 +61,77 @@ namespace tree25
             {
                 this.rightChild = new Node(value);
             }
-            public void treeOut(int offset, int level)
+            public void treeOut(int offset, int level, int deep)
             {
+                Console.SetCursorPosition(offset, level);
+                Console.Write(this.value);
+                if (leftChild != null)
+                {
+                    int curPos = offset - 2;
+                    int childPos = -1;
+                    childPos = (int)(curPos - Console.WindowWidth / Math.Pow(2, deep + 2));
+                    switch (deep)
+                    {
+                        case 0:
+                            childPos += 8;
+                            break;
+                        case 1:
+                            childPos += 6;
+                            break;
+                        case 2:
+                            childPos += 2;
+                            break;
+                        case 3:
+                            childPos += 1;
+                            break;
+                    }
+                    if (childPos >= 0)
+                    {
+                        Console.SetCursorPosition(childPos, level + 1);
+                        Console.Write("/");
+                        while (curPos > childPos)
+                        {
+                            Console.SetCursorPosition(curPos, level);
+                            Console.Write("_");
+                            curPos--;
+                        }
+                        this.leftChild.treeOut(childPos - 1, level + 2, deep + 1);
+                    }
+                }
+                if (rightChild != null)
+                {
+                    int curPos = offset + 2;
+                    int childPos = -1;
+                    childPos = (int)(curPos + Console.WindowWidth / Math.Pow(2, deep + 2));
+                    switch (deep)
+                    {
+                        case 0:
+                            childPos -= 8;
+                            break;
+                        case 1:
+                            childPos -= 5;
+                            break;
+                        case 2:
+                            childPos -= 2;
+                            break;
+                        case 3:
+                            childPos -= 1;
+                            break;
+                    }
+                    if (childPos >= 0)
+                    {
+                        Console.SetCursorPosition(childPos, level + 1);
+                        Console.Write("\\");
+                        while (curPos < childPos)
+                        {
+                            Console.SetCursorPosition(curPos, level);
+                            Console.Write("_");
+                            curPos++;
+                        }
+                        this.rightChild.treeOut(childPos + 1, level + 2, deep + 1);
+                    }
+                }
+                /*
                 Console.SetCursorPosition(offset, level);
                 Console.Write(this.value);
                 if (leftChild != null)
@@ -129,6 +198,7 @@ namespace tree25
                         this.rightChild.treeOut(childPos + 1, level + 2);
                     }
                 }
+                */
             }
         }
     }
