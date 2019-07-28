@@ -31,15 +31,15 @@ namespace tree31
                     max += Math.Pow(2, j);
                 //формирование дерева
                 root = new Node(mas[0]);
-                alg(N, L, max, 1, root, mas);
+                forming_tree(N, L, max, 1, root, mas);
             }
             catch (Exception)
             {
             }
-            root.treeOut(Console.WindowWidth / 2, 3);
+            root.treeOut(Console.WindowWidth / 2, 3, 0);
             Console.Read();
         }
-        static void alg(int N, int L, double max, int lvl, Node node, int[] mas)
+        static void forming_tree(int N, int L, double max, int lvl, Node node, int[] mas)
         {
             if (lvl < L && k < N && k <= max)
             {
@@ -48,7 +48,7 @@ namespace tree31
                     lvl++;
                     node.leftChild = new Node(mas[k]);
                     k++;
-                    alg(N, L, max, lvl, node.leftChild, mas);
+                    forming_tree(N, L, max, lvl, node.leftChild, mas);
                     lvl--;
                 }
                 if (node.rightChild == null)
@@ -56,7 +56,7 @@ namespace tree31
                     lvl++;
                     node.rightChild = new Node(mas[k]);
                     k++;
-                    alg(N, L, max, lvl, node.rightChild, mas);
+                    forming_tree(N, L, max, lvl, node.rightChild, mas);
                     lvl--;
                 }
             }
