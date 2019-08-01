@@ -4,11 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Добавление ко всем листьям детей 10 и 11 слева и справа соответственно
+
 namespace tree44
 {
     class Program
     {
-        static int k = 1;
         static void Main(string[] args)
         {
             Console.WriteLine("Начальное дерево: ");
@@ -31,8 +32,6 @@ namespace tree44
             root.leftChild.leftChild.leftChild = new Node(mas[6]);
             root.leftChild.leftChild.rightChild = new Node(mas[7]);
 
-            //forming_tree(mas.Length, 2, max, 1, root, mas);
-
             root.treeOut(Console.WindowWidth / 2, 2, 0);
             Console.SetCursorPosition(0, 10);
             Console.WriteLine("Конечное дерево: ");
@@ -53,28 +52,6 @@ namespace tree44
                     add_nodes_to_leaves(node.leftChild);
                 if (node.rightChild != null)
                     add_nodes_to_leaves(node.rightChild);
-            }
-        }
-        static void forming_tree(int nodes_amount, int tree_level, double max, int tmp_lvl_1, Node node, int[] value_mas)
-        {
-            if (tmp_lvl_1 < tree_level && k < nodes_amount && k <= max)
-            {
-                if (node.leftChild == null)
-                {
-                    tmp_lvl_1++;
-                    node.leftChild = new Node(value_mas[k]);
-                    k++;
-                    forming_tree(nodes_amount, tree_level, max, tmp_lvl_1, node.leftChild, value_mas);
-                    tmp_lvl_1--;
-                }
-                if (node.rightChild == null)
-                {
-                    tmp_lvl_1++;
-                    node.rightChild = new Node(value_mas[k]);
-                    k++;
-                    forming_tree(nodes_amount, tree_level, max, tmp_lvl_1, node.rightChild, value_mas);
-                    tmp_lvl_1--;
-                }
             }
         }
     }

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//создание N-уровневого дерева только из правых детей
+
 namespace tree25
 {
     class Program

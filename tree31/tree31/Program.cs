@@ -4,6 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Формирование дерева из N вершин и L уровней в префиксном порядке
+//Префиксный порядок - сначала действия происходят с вершиной, потом с ее левым и правым детьми
+
 namespace tree31
 {
     class Program

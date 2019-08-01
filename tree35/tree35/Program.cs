@@ -4,6 +4,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+//Удвоение значений всех вершин
+
 namespace tree35
 {
     class Program
