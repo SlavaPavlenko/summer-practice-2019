@@ -17,6 +17,13 @@ namespace param32
             string s3 = "Ya ne zabil sebya, hot' rad, hotya ne rad.";
             string s4 = "Нет, нет — вы мне совсем не брат:";
             string s5 = "Вы дядя мне и на Парнасе.";
+            Console.WriteLine("Исходные строки:");
+            Console.WriteLine(s1);
+            Console.WriteLine(s2);
+            Console.WriteLine(s3);
+            Console.WriteLine(s4);
+            Console.WriteLine(s5);
+            Console.WriteLine("\nКонечные строки: ");
             Console.WriteLine(UpCaseRus(s1));
             Console.WriteLine(UpCaseRus(s2));
             Console.WriteLine(UpCaseRus(s3));

@@ -20,8 +20,18 @@ namespace dynamic32
             list.AddLast(3);
             list.AddLast(4);
             list.AddLast(5);
+
+            Console.WriteLine("Начальный список:");
+            LinkedListNode<int> tmp = list.First;
+            while (tmp.Next != null)
+            {
+                Console.WriteLine(tmp.Value);
+                tmp = tmp.Next;
+            }
+            Console.WriteLine(tmp.Value);
+
             //ввод значений D1, D2, и указателя P0
-            Console.Write("D1: ");
+            Console.Write("\nD1: ");
             int D1 = Convert.ToInt16(Console.ReadLine());
             Console.Write("D2: ");
             int D2 = Convert.ToInt16(Console.ReadLine());

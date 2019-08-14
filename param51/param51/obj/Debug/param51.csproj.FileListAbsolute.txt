@@ -5,3 +5,10 @@ C:\Users\SunRay\Desktop\практика\param51\param51\obj\Debug\param51.cspro
 C:\Users\SunRay\Desktop\практика\param51\param51\obj\Debug\param51.csproj.CoreCompileInputs.cache
 C:\Users\SunRay\Desktop\практика\param51\param51\obj\Debug\param51.exe
 C:\Users\SunRay\Desktop\практика\param51\param51\obj\Debug\param51.pdb
+C:\Users\SunRay\Documents\summer-practice-2019\param51\param51\bin\Debug\param51.exe.config
+C:\Users\SunRay\Documents\summer-practice-2019\param51\param51\bin\Debug\param51.exe
+C:\Users\SunRay\Documents\summer-practice-2019\param51\param51\bin\Debug\param51.pdb
+C:\Users\SunRay\Documents\summer-practice-2019\param51\param51\obj\Debug\param51.csprojAssemblyReference.cache
+C:\Users\SunRay\Documents\summer-practice-2019\param51\param51\obj\Debug\param51.csproj.CoreCompileInputs.cache
+C:\Users\SunRay\Documents\summer-practice-2019\param51\param51\obj\Debug\param51.exe
+C:\Users\SunRay\Documents\summer-practice-2019\param51\param51\obj\Debug\param51.pdb

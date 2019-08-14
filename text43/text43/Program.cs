@@ -28,19 +28,18 @@ namespace text43
             }
             catch (Exception e)
             {
+                error = true;
                 Console.WriteLine(e.Message);
             }
             if (!error)
             {
-                //File.CreateText("C:\\Users\\SunRay\\Desktop\\практика\\text43\\file.txt");
-                FileStream file = new FileStream("C:\\Users\\SunRay\\Desktop\\практика\\text43\\file.txt", FileMode.Create);
+                FileStream file = new FileStream("C:\\Users\\SunRay\\Documents\\summer-practice-2019\\text43\\file.txt", FileMode.Create);
                 StreamWriter writer = new StreamWriter(file);
                 double x = a;
                 writer.WriteLine(String.Format("{0,8:0.#}", "x") + String.Format("{0,12:0.#}",
                         "sin") + "\t" + String.Format("{0,12:0.#}", "cos"));
                 while (x <= b)
                 {
-                    //StringBuilder stringBuilder = new StringBuilder();
                     writer.WriteLine(String.Format("{0,8:0.#}", x) + String.Format("{0,12:0.#}",
                         Math.Sin(x)) + "\t" +String.Format("{0,12:0.#}", Math.Cos(x)));
                     x += (b-a)/n;

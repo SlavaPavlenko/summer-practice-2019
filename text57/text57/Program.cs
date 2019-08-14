@@ -24,7 +24,7 @@ namespace text57
     {
         static void Main(string[] args)
         {
-            FileStream file = new FileStream("C:\\Users\\SunRay\\Desktop\\практика\\text57\\input.txt", FileMode.Open);
+            FileStream file = new FileStream("C:\\Users\\SunRay\\Documents\\summer-practice-2019\\text57\\input.txt", FileMode.Open);
             StreamReader reader = new StreamReader(file, Encoding.Default);
             List<Pare> list = new List<Pare>();
             char symbol = (char)reader.Read();
@@ -45,7 +45,7 @@ namespace text57
             reader.Close();
             file.Close();
 
-            file = new FileStream("C:\\Users\\SunRay\\Desktop\\практика\\text57\\output.txt", FileMode.Create);
+            file = new FileStream("C:\\Users\\SunRay\\Documents\\summer-practice-2019\\text57\\output.txt", FileMode.Create);
             StreamWriter writer = new StreamWriter(file);
             var sortedList = list.OrderBy(pare=>pare.Letter);
             foreach (Pare pare in sortedList)

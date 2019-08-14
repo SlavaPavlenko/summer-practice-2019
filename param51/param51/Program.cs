@@ -21,13 +21,10 @@ namespace param51
     {
         static void Main(string[] args)
         {
-            addLineNumbers("C:\\Users\\SunRay\\Desktop\\практика\\param51\\file.txt", 9, 3, 5);
-            //Console.Read();
+            addLineNumbers("C:\\Users\\SunRay\\Documents\\summer-practice-2019\\param51\\file.txt", 9, 3, 5);
         }
         public static void addLineNumbers(string S, int N, int K, int L)
         {
-            //{0,K:0}
-            //StringBuilder format = new StringBuilder("{0,");
             string format = "{0," + K + ":0}";
             FileStream file1 = new FileStream(S, FileMode.Open);
             string tmpFilePath = Path.GetTempFileName();    //создается файл и возвращается полный путь к нему

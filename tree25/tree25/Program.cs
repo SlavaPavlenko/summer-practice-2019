@@ -12,7 +12,6 @@ namespace tree25
     {
         static void Main(string[] args)
         {
-            //Console.SetWindowSize(170, 58);
             Console.Write("N: ");
             try
             {

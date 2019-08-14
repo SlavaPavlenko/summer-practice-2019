@@ -5,3 +5,10 @@ C:\Users\SunRay\Desktop\практика\param32\param32\obj\Debug\param32.cspro
 C:\Users\SunRay\Desktop\практика\param32\param32\obj\Debug\param32.csproj.CoreCompileInputs.cache
 C:\Users\SunRay\Desktop\практика\param32\param32\obj\Debug\param32.exe
 C:\Users\SunRay\Desktop\практика\param32\param32\obj\Debug\param32.pdb
+C:\Users\SunRay\Documents\summer-practice-2019\param32\param32\bin\Debug\param32.exe.config
+C:\Users\SunRay\Documents\summer-practice-2019\param32\param32\bin\Debug\param32.exe
+C:\Users\SunRay\Documents\summer-practice-2019\param32\param32\bin\Debug\param32.pdb
+C:\Users\SunRay\Documents\summer-practice-2019\param32\param32\obj\Debug\param32.csprojAssemblyReference.cache
+C:\Users\SunRay\Documents\summer-practice-2019\param32\param32\obj\Debug\param32.csproj.CoreCompileInputs.cache
+C:\Users\SunRay\Documents\summer-practice-2019\param32\param32\obj\Debug\param32.exe
+C:\Users\SunRay\Documents\summer-practice-2019\param32\param32\obj\Debug\param32.pdb
